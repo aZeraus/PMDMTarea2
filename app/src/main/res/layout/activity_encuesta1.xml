@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Encuesta.Encuesta1">
+
+    <ImageView
+        android:id="@+id/imgIdeal"
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="Logo del Diario Ideal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ideal" />
+
+    <TextView
+        android:id="@+id/tvPregunta1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="Pregunta2"
+        android:text="@string/Pregunta1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgIdeal" />
+
+    <RadioGroup
+        android:id="@+id/rgPregunta1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPregunta1">
+
+        <RadioButton
+            android:id="@+id/rb1a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a. Menos de un mes." />
+
+        <RadioButton
+            android:id="@+id/rb1b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="b. Entre seis meses y un año." />
+
+        <RadioButton
+            android:id="@+id/rb1c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="c. Entre uno y tres años." />
+
+        <RadioButton
+            android:id="@+id/rb1d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="d. Más de tres años." />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnPregunta2"
+        style="@style/botonGenerico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="Pregunta2"
+        android:padding="5dp"
+        android:text="Pregunta 2"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgPregunta1"
+        tools:text="Pregunta 2" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="128dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPregunta2"
+        android:progress="12" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

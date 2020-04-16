@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Encuesta.Encuesta6">
+
+    <ImageView
+        android:id="@+id/imgIdeal"
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="Logo del Diario Ideal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ideal" />
+
+    <TextView
+        android:id="@+id/tvPregunta6"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/Pregunta6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgIdeal" />
+
+    <RadioGroup
+        android:id="@+id/rgPregunta6"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPregunta6">
+
+        <RadioButton
+            android:id="@+id/rb6a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a. No lo utilizo, es un medio obsoleto que está condenado a desaparecer." />
+
+        <RadioButton
+            android:id="@+id/rb6b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="b. No lo utilizo, pero varias personas cercanas a mi siguen utilizando este formato." />
+
+        <RadioButton
+            android:id="@+id/rb6c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="c. Lo utilizo en ocasiones puntuales." />
+
+        <RadioButton
+            android:id="@+id/rb6d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="d. Lo utilizo a diario y me parece mucho mejor que el formato electrónico." />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnPregunta7"
+        style="@style/botonGenerico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="Pregunta7"
+        android:padding="5dp"
+        android:text="Pregunta 7"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgPregunta6"
+        tools:text="Pregunta 7" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="128dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPregunta7"
+        android:progress="75" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

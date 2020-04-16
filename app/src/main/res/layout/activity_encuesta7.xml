@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Encuesta.Encuesta7">
+
+    <ImageView
+        android:id="@+id/imgIdeal"
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="Logo del Diario Ideal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ideal" />
+
+    <TextView
+        android:id="@+id/tvPregunta7"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/Pregunta7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgIdeal" />
+
+    <RadioGroup
+        android:id="@+id/rgPregunta7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPregunta7">
+
+        <RadioButton
+            android:id="@+id/rb7a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a. Mala." />
+
+        <RadioButton
+            android:id="@+id/rb7b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="b. Regular." />
+
+        <RadioButton
+            android:id="@+id/rb7c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="c. Buena." />
+
+        <RadioButton
+            android:id="@+id/rb7d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="d. Muy buena." />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnPregunta8"
+        style="@style/botonGenerico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="Pregunta8"
+        android:padding="5dp"
+        android:text="Pregunta 8"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgPregunta7"
+        tools:text="Pregunta 8" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="128dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPregunta8"
+        android:progress="87" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

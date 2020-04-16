@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Resultados">
+
+    <ImageView
+        android:id="@+id/imgIdeal"
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="Logo del Diario Ideal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ideal" />
+
+    <ImageView
+        android:id="@+id/imgFin"
+        android:layout_width="144dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="Fin de la encuesta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgIdeal"
+        app:srcCompat="@drawable/fin" />
+
+    <ScrollView
+        android:id="@+id/scrollDatos"
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgFin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvEdad"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Edad"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvResEdad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Edad del Usuari@"
+                        android:textColor="@color/miAzul"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvGenero"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Género"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvResGenero"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Género del Usuari@"
+                        android:textColor="@color/miAzul"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvProvincia"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Provincia"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvResProvincia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Provincia del Usuari@"
+                        android:textColor="@color/miAzul"
+                        android:textStyle="bold" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/tvPreguntas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Respuestas a las Preguntas"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvP1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Pregunta1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvResP1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Respuesta"
+                android:textColor="@color/miAzul"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvP2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Pregunta2"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvResP2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Respuesta"
+                android:textColor="@color/miAzul"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvP3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Pregunta3"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvResP3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Respuesta"
+                android:textColor="@color/miAzul"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvP4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Pregunta4"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvResP4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Respuesta"
+                android:textColor="@color/miAzul"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvP5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Pregunta5"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvResP5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Respuesta"
+                android:textColor="@color/miAzul"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvP6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Pregunta6"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvResP6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Respuesta"
+                android:textColor="@color/miAzul"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvP7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Pregunta7"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvResP7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Respuesta"
+                android:textColor="@color/miAzul"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvP8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Pregunta8"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvResP8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Respuesta"
+                android:textColor="@color/miAzul"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvURL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="32dp"
+                android:text="URL"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvResURL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:text="URL"
+                android:textColor="@color/miAzul"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnContinuar"
+        style="@style/botonGenerico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="Volver"
+        android:padding="5dp"
+        android:text="VOLVER AL TEST"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollDatos"
+        tools:text="VOLVER AL TEST" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

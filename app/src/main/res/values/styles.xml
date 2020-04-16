@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="MiTema" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/miAzul</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">@color/miAzul</item>
+    </style>
+
+    <!-- Estilos de botones -->
+    <style name="botonGenerico">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/grisClaro</item>
+        <item name="android:background">@color/miAzul</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+</resources>

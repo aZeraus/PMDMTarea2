@@ -1,0 +1,36 @@
+<resources>
+
+    <string name="app_name">Encuesta Diario Ideal de Almería</string>
+    <string name="titulo">Ayúdanos a mejorar nuestros productos y servicios</string>
+
+    <!-- Información Legal -->
+    <string name="tvTextoLegal">La elaboración de este test es anónima. Esta información solo se utilizará con fines estadísticos y en ningún momento se asociará a ningún dato con el que se te pueda relacionar.</string>
+
+    <!-- Acerca de -->
+    <string name="acercaDe">Acerca de ...</string>
+    <string name="tarea">Tarea 2: PMDM</string>
+    <string name="autor">Alumno: Alejandro Suárez Villazuerte</string>
+    <string name="fecha">Fecha: Enero, 2020</string>
+    <string name="volver_acerca">Volver</string>
+
+    <!-- Ayuda -->
+    <string name="ayuda">Ayuda</string>
+    <string name="ayuda_texto">Manual de ayuda de la aplicación\n\n\nPantalla Principal:\n\nEs la pantalla de presentación y da paso a la de datos.\n\n\nPantalla de Datos:\n\nContiene tres campos para introducir La edad que debe estar comprendida entre los 16 y los 120 años, el género y la provincia. Es obligatorio rellenarlos todos. También se muestra el texto legal.\n\n\nPantallas de la encuesta:\n\nEstán compuestas por 8 pantallas que se corresponden con otras tantas preguntas de test formadas por 4 opciones a elegir una dalvo la pregunta cuarta que es de selección múltiple y tiene sus correspondientes casillas tipo CheckBox.\n\n\nPantalla de Confirmación:\n\nContiene la información del usuario y los resultados escogidos en el test.\n\n\nPantalla Acerca de:\n\nContiene información sobre el desarrollador.\n\n</string>
+    <string name="volver_ayuda">Cerrar</string>
+
+    <!-- Errores y Mensajes -->
+    <string name="errNoDatos">Faltan datos o son incorrectos.</string>
+    <string name="errNoCompleto">Faltan datos o son incorrectos.</string>
+    <string name="errNoSeleccionado">Debe seleccionar alguna opción.</string>
+
+    <!-- Preguntas -->
+    <string name="Pregunta1">1. ¿Cuánto tiempo lleva utilizado los productos/servicios de Diario Ideal de Almería?</string>
+    <string name="Pregunta2">2. ¿Cómo conoció la página web de Diario Ideal de Almería?</string>
+    <string name="Pregunta3">3. ¿Volverá a entrar en la página web de Diario Ideal de Almería de nuevo?</string>
+    <string name="Pregunta4">4. ¿Desde qué dispositivo suele consultar nuestros servicios electrónicos?</string>
+    <string name="Pregunta5">5. ¿Estaría dispuesto a contratar una subscripción digital Premium?</string>
+    <string name="Pregunta6">6. ¿Qué opina de nuestro servicio de subscripción en formato papel?</string>
+    <string name="Pregunta7">7. Por favor, indíquenos su grado de satisfacción general con la página web de Diario Ideal de Almería.</string>
+    <string name="Pregunta8">8. ¿Recomendaría los servicios de Diario Ideal de Almería a sus familiares o amigos?</string>
+
+</resources>

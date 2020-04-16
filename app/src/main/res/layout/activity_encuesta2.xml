@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="Pregunta3"
+    tools:context=".Encuesta.Encuesta2">
+
+    <ImageView
+        android:id="@+id/imgIdeal"
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="Logo del Diario Ideal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ideal" />
+
+    <TextView
+        android:id="@+id/tvPregunta2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/Pregunta2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgIdeal" />
+
+    <RadioGroup
+        android:id="@+id/rgPregunta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPregunta2">
+
+        <RadioButton
+            android:id="@+id/rb2a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a. Radio." />
+
+        <RadioButton
+            android:id="@+id/rb2b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="b. Internet." />
+
+        <RadioButton
+            android:id="@+id/rb2c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="c. Nuestros productos de prensa y revistas." />
+
+        <RadioButton
+            android:id="@+id/rb2d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="d. Amigos, colegas o contactos." />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnPregunta3"
+        style="@style/botonGenerico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="Pregunta3"
+        android:padding="5dp"
+        android:text="Pregunta 3"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgPregunta2"
+        tools:text="Pregunta 3" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="128dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPregunta3"
+        android:progress="25" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
